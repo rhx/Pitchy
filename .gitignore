@@ -33,4 +33,8 @@ Pods
 Carthage
 
 # SPM
-.build/
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/

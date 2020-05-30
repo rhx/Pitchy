@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
 
   s.requires_arc = true
-  s.ios.source_files = 'Source/**/*'
-  s.osx.source_files = 'Source/**/*'
+  s.ios.source_files = 'Sources/**/*'
+  s.osx.source_files = 'Sources/**/*'
 
   s.frameworks = 'Foundation'
 end

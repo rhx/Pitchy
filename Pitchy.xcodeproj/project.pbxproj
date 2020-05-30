@@ -91,6 +91,7 @@
 		D5DF4A2C1C2EEAE400343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D5DF4A2F1C2EEAF200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		D5DF4A301C2EEAF200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		F1A603FC2482632A00F00D16 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,14 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D512C1261C319B9D002DD504 /* Data */ = {
+		D512C1261C319B9D002DD504 /* Pitchy */ = {
 			isa = PBXGroup;
 			children = (
 				D512C1271C319BC1002DD504 /* Pitch.swift */,
 				D512C1281C319BC1002DD504 /* AcousticWave.swift */,
 				D512C1291C319BC1002DD504 /* Note.swift */,
+				D5DF49B51C2EE67800343F13 /* NoteCalculator.swift */,
+				D5DF49B61C2EE67800343F13 /* PitchCalculator.swift */,
+				D5DF49B71C2EE67800343F13 /* WaveCalculator.swift */,
+				D512C1201C319917002DD504 /* FrequencyValidator.swift */,
+				D512C1231C319A40002DD504 /* Error.swift */,
 			);
-			path = Data;
+			path = Pitchy;
 			sourceTree = "<group>";
 		};
 		D512C1301C319C48002DD504 /* Data */ = {
@@ -159,7 +165,7 @@
 				D5DF4A301C2EEAF200343F13 /* Nimble.framework */,
 				D5DF4A2B1C2EEAE400343F13 /* Quick.framework */,
 				D5DF4A2C1C2EEAE400343F13 /* Nimble.framework */,
-				D5DF49B21C2EE67800343F13 /* Source */,
+				D5DF49B21C2EE67800343F13 /* Sources */,
 				D5DF499A1C2EE43D00343F13 /* Pitchy */,
 				D5DF49A61C2EE43E00343F13 /* PitchyTests */,
 				D5DF49991C2EE43D00343F13 /* Products */,
@@ -196,25 +202,13 @@
 			path = PitchyTests;
 			sourceTree = "<group>";
 		};
-		D5DF49B21C2EE67800343F13 /* Source */ = {
+		D5DF49B21C2EE67800343F13 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D512C1261C319B9D002DD504 /* Data */,
-				D5DF49B41C2EE67800343F13 /* Calculators */,
-				D512C1201C319917002DD504 /* FrequencyValidator.swift */,
-				D512C1231C319A40002DD504 /* Error.swift */,
+				F1A603FC2482632A00F00D16 /* Package.swift */,
+				D512C1261C319B9D002DD504 /* Pitchy */,
 			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DF49B41C2EE67800343F13 /* Calculators */ = {
-			isa = PBXGroup;
-			children = (
-				D5DF49B51C2EE67800343F13 /* NoteCalculator.swift */,
-				D5DF49B61C2EE67800343F13 /* PitchCalculator.swift */,
-				D5DF49B71C2EE67800343F13 /* WaveCalculator.swift */,
-			);
-			path = Calculators;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D5DF49F31C2EE87200343F13 /* Mac */ = {
