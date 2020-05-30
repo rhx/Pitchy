@@ -38,3 +38,5 @@ Carthage
 /Packages
 /*.xcodeproj
 xcuserdata/
+/.swiftpm
+/Package.resolved
