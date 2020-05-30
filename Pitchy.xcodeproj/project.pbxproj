@@ -393,10 +393,9 @@
 			};
 			buildConfigurationList = D5DF49921C2EE43D00343F13 /* Build configuration list for PBXProject "Pitchy" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
