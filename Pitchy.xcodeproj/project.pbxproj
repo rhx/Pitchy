@@ -92,6 +92,8 @@
 		D5DF4A2F1C2EEAF200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		D5DF4A301C2EEAF200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		F1A603FC2482632A00F00D16 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		F1A604092482690B00F00D16 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F1A6040B2482690B00F00D16 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +152,6 @@
 		D512C1301C319C48002DD504 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D512C1311C319C82002DD504 /* AcousticWaveSpec.swift */,
-				D512C1321C319C82002DD504 /* NoteSpec.swift */,
-				D512C1331C319C82002DD504 /* PitchSpec.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -167,6 +166,7 @@
 				D5DF4A2C1C2EEAE400343F13 /* Nimble.framework */,
 				D5DF49B21C2EE67800343F13 /* Sources */,
 				D5DF499A1C2EE43D00343F13 /* Pitchy */,
+				F1A604082482690B00F00D16 /* Tests */,
 				D5DF49A61C2EE43E00343F13 /* PitchyTests */,
 				D5DF49991C2EE43D00343F13 /* Products */,
 				F1A604032482660D00F00D16 /* Frameworks */,
@@ -233,7 +233,6 @@
 			children = (
 				D512C1301C319C48002DD504 /* Data */,
 				D5DF49FB1C2EE8AC00343F13 /* Calculators */,
-				D53425071F8C0F8A00BE4F4B /* FrequencyValidatorSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -241,9 +240,6 @@
 		D5DF49FB1C2EE8AC00343F13 /* Calculators */ = {
 			isa = PBXGroup;
 			children = (
-				D5DF49FC1C2EE8AC00343F13 /* NoteCalculatorSpec.swift */,
-				D5DF49FD1C2EE8AC00343F13 /* PitchCalculatorSpec.swift */,
-				D5DF49FE1C2EE8AC00343F13 /* WaveCalculatorSpec.swift */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -269,6 +265,30 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1A604082482690B00F00D16 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A604092482690B00F00D16 /* LinuxMain.swift */,
+				F1A6040A2482690B00F00D16 /* PitchyTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F1A6040A2482690B00F00D16 /* PitchyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D512C1311C319C82002DD504 /* AcousticWaveSpec.swift */,
+				D512C1321C319C82002DD504 /* NoteSpec.swift */,
+				D512C1331C319C82002DD504 /* PitchSpec.swift */,
+				D5DF49FC1C2EE8AC00343F13 /* NoteCalculatorSpec.swift */,
+				D5DF49FD1C2EE8AC00343F13 /* PitchCalculatorSpec.swift */,
+				D5DF49FE1C2EE8AC00343F13 /* WaveCalculatorSpec.swift */,
+				D53425071F8C0F8A00BE4F4B /* FrequencyValidatorSpec.swift */,
+				F1A6040B2482690B00F00D16 /* XCTestManifests.swift */,
+			);
+			path = PitchyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

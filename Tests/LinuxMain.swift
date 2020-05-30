@@ -1,7 +1,14 @@
 import XCTest
+import Quick
 
-import PitchyTests
+@testable import PitchyTests
 
-var tests = [XCTestCaseEntry]()
-tests += PitchyTests.allTests()
-XCTMain(tests)
+QCKMain([
+    AcousticWaveSpec.self,
+    NoteSpec.self,
+    PitchSpec.self,
+    NoteCalculatorSpec.self,
+    PitchCalculatorSpec.self,
+    WaveCalculatorSpec.self,
+    FrequencyValidatorSpec.self,
+])
